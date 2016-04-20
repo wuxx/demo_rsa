@@ -1,6 +1,19 @@
 #include <stdio.h>
 #include <assert.h>
 
+int gcd(int x, int y)
+{
+    if (x > y) {
+        if (x % y != 0) {
+            return gcd(b, a%b);
+        } else {
+            return y;
+        }
+    } else  {
+        return gcd(y, x);
+    }
+}
+
 int is_prime(int x)
 {
     int i;
